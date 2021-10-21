@@ -1,0 +1,308 @@
+/*
+Table of Contents
+/-----------------/
+1. General formating / styling
+2. product card styling
+3. checkout page / form styling
+4. buttons!!!
+5. product page specifics
+*/
+
+
+   /*--------------------------------  */
+  /* 1. General formating / styling   */
+ /*--------------------------------  */
+
+:root{
+    --main-color: #FFEBCD;
+    --accent-one: #F1962E;
+    --accent-two: #01627F;
+    --accent-three:#8E7258;
+    --accent-four: #C7F8FF;
+    --accent-opaqe: rgba(109, 235, 235, 0.093);
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    margin: 0%;
+    font-family: 'Inconsolata', monospace;
+}
+
+header{
+    /* border: 2px solid purple; */
+    background-color: var(--main-color);
+    display: flex;
+
+}
+
+#site-title{
+    /* border: 2px solid green; */
+    margin: 0%;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    padding-right: 1.25rem ;
+    top: 0;
+    display: flex;
+    place-content: left;
+    font-size: 4rem;
+    font-weight: 400;
+    background-color: var(--accent-one);
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 30%;
+
+}
+
+.title-link{
+    text-decoration: none;
+    color: black;
+}
+
+#site-title:hover{
+    box-shadow: 0 0 3px 2px rgba(0, 140, 186, 0.5);
+}
+
+
+#search-form{
+    /* border: 2px solid black; */
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: 2rem;
+}
+
+#search-bar{
+    width: 700px;
+    box-sizing: border-box;
+    font-size: 2rem;
+    border-radius: .75rem;
+
+}
+
+.cart-container{
+    display: inline-flex;
+    flex: auto;
+    justify-content: end;
+}
+.bx.bx-cart {
+    border:none;
+    font-size: 5rem;
+    padding: 1rem;
+    
+}
+
+.search-button-container{
+    margin-left: .5%;
+}
+.bx.bx-search-alt{
+    font-size: 2rem;
+}
+
+
+
+.header-nav{
+    /* border: 2px solid blue;  */
+    display: flex;
+    justify-content: space-around;
+}
+.header-nav .nav-list li{
+    /* border: 2px solid red; */
+    display: inline;
+    padding: 10px 20px;
+}
+
+.header-nav .nav-list li a{
+    color: black;
+}
+
+
+.section-head{
+    margin-left: 5%;
+}
+/* selects every p element preceded by h2 */
+h2~p{
+    margin-left: 7%;
+}
+section.row{
+    /* border: 4px solid dodgerblue; */
+    display: flex;
+    justify-content:space-around;
+    padding: 5px;
+    padding-left:5% ;
+    padding-right:5% ;
+}
+
+
+  /* ----------------------- */
+ /* 2. product card styling */
+/* ----------------------- */
+
+
+.product-card{
+    /* display option set to keep text together with the div */
+    /* border: 2px solid green; */
+    padding: 10px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    /* aligns the text in the center of the product card */
+    /* text-align: center; */
+}
+
+.product-image:hover {
+    box-shadow: 0 0 3px 2px rgba(0, 140, 186, 0.5);
+  }
+
+.product-image{
+    height: 250px;
+    width: 250px;
+
+}
+
+.product-image.Elizabeth-collection{
+    border-radius: 50%;
+}
+
+.product-image.Isaiah-collection , .product-image.Brian-collection{
+    border-radius: 30%;
+}
+
+.product-header{
+    /* display: block; */
+    text-align: center;
+}
+
+.product-description{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+  /* ------------------------------- */
+ /* 3. checkout page / form styling */
+/* ------------------------------- */
+
+.shipping-info-list li, .billing-info-list li{
+    list-style: none;
+}
+
+legend{
+    font-size: 2rem;
+}
+
+li label{
+    font-size: 1.25rem;
+    }
+
+.form-subheading{
+    font-size: 1.5rem;
+    margin-left: -2%;
+}
+
+input.form-field{
+    border-radius: .75em;
+    height: 1.1rem;
+}
+
+
+
+  /* ------------------------------- */
+ /* 4. buttons!!!
+/* ------------------------------- */
+.submit-btn{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    display: block;
+    background-color: var(--accent-two);
+    border: none;
+    color: white;
+    padding: 1rem 7em;
+    text-align: center;
+    font-size: 1.25rem;
+
+
+}
+
+.add-to-cart-btn{
+    color:  var(--main-color);
+    background-color: var(--accent-two);
+    border-radius: .3em;
+    border: none;
+    padding: .67em .67em;
+}
+
+.add-to-cart-btn:hover{
+    box-shadow: 0 0 3px 2px rgba(0, 140, 186, 0.5);
+    color: black;
+    background-color: var(--accent-one);
+}
+
+
+
+.cart-button{
+    padding: 1.2rem;
+    border:none;
+    background-color: var(--accent-three);
+}
+
+.cart-button:hover, .search-button:hover{
+    box-shadow: 0 0 3px 2px rgba(0, 140, 186, 0.5);
+    /* background-color: var(--accent-two); */
+}
+
+
+.search-button{
+    padding: 1rem;
+    margin-left: 10%;
+    margin-top: 25px;
+    border-radius: 50%;
+    background-color: var(--accent-four);
+}
+
+
+  /* ------------------------------- */
+ /* 5. product page specifics
+/* ------------------------------- */
+
+.product-page-container{
+    display: flex;
+    /* hangining align-items to align content created the desired result  */
+    align-content: center;
+    justify-content: space-around;
+    /* border: 2px solid rebeccapurple; */
+}
+.big-image{
+    height: 500px;
+    width: 500px;
+
+}
+
+.pp-details-container{
+
+    /* margin: top; */
+    border: 2px solid black;
+}
+
+.pp-detail-list-header{
+    text-align: center;
+}
+
+#magnifying_area{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    position: relative;
+}
+
+#magnifying_img{
+    max-width: 100%;
+    min-width: 100%;
+    position: absolute;
+    Left: 50%;
+    Top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}

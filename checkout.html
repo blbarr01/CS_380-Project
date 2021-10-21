@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="styles.css" rel="stylesheet">
+    <title>Fakebiz - checkout</title>
+</head>
+
+<body>
+    <Header>
+        <a href="index.html" class= 'title-link'><h1 id="site-title"> Fakebiz</h1></a>
+        <form action="#" id='search-form'>
+            <label for="search-bar">
+                Search: <input type="text" id="search-bar" name="search_query" placeholder="awesome awaits">
+            </label>
+        </form>
+        <div class="search-button-container">
+            <button type="submit" class="search-button">
+                <i class='bx bx-search-alt'></i>
+            </button>
+        </div>
+        <div class ='cart-container'>
+            <button type="button" class="cart-button"><i class='bx bx-cart'></i></button> 
+         </div>
+    </Header>
+    <nav class='header-nav'>
+        <ul class='nav-list'>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product-page.html">featured</a></li>
+            <li><a href="#">checkout</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <!-- action submits to another page -->
+    <form action="">
+        <!-- shipping  -->
+        <fieldset>
+            <!-- legend option helps with screen readers refer to MDN for specifics -->
+            <!-- using ul and li elements to help structure the page  -->
+            <legend>Shipping Info</legend>
+            <ul class = 'shipping-info-list'>
+                <li>
+            <!-- structuring the labels and inputs as such allows the user 
+                to enter the text field by clicking the label text -->
+                    <label for="first-name">
+                        First Name: <input type="text" name="first-name" id="first-name" class="form-field">
+                    </label>
+                    <label for="last-name">
+                        Last Name: <input type="text" name="last-name" id="last-name" class="form-field">
+                    </label>
+                </li>
+                <br>
+                <li>
+                    <label for="email-address">
+                        Email Address: <input type="email" name="email" id="email-address" class="form-field">
+                    </label>
+                </li>
+                <li>
+                    <p class="form-subheading">Shipping Address:</p>
+                    <label for="apt#">
+                        apt#: <input type="text" name = "apt-num" id="apt#" class="form-field">
+                    </label>
+                    <label for="street-address">
+                        Street Address: <input type="text" name="street-address" id="street-address" class = "form-field">
+                    </label>
+                    <label for = 'city'>
+                        City: <input type="text" name = 'city' id="city" class = "form-field">
+                    </label>
+                    <label for="zipcode">
+                        ZIP Code: <input type="text" name="zipcode" id="zipcode" class="form-field">
+                    </label>
+                    <label for = "State">
+                       State: <select name="State" id="State" >
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AR">AR</option>	
+                            <option value="AZ">AZ</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DC">DC</option>
+                            <option value="DE">DE</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="IA">IA</option>	
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="MA">MA</option>
+                            <option value="MD">MD</option>
+                            <option value="ME">ME</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MO">MO</option>	
+                            <option value="MS">MS</option>
+                            <option value="MT">MT</option>
+                            <option value="NC">NC</option>	
+                            <option value="NE">NE</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>			
+                            <option value="NV">NV</option>
+                            <option value="NY">NY</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WI">WI</option>	
+                            <option value="WV">WV</option>
+                            <option value="WY">WY</option>
+                        </select>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <!-- Billing -->
+        <fieldset>
+            <legend>Billing info</legend>
+            <ul class="billing-info-list">
+                <li>
+                    <label for="same-as-shipping">
+                       same as shipping info <input type="checkbox" name="same-as-shipping" id="same-as-shipping">
+                    </label>
+                </li>
+                <li>
+                    <p class="form-subheading"> name on card: </p>
+                    <label for="B-first-name">
+                        First Name: <input type="text" name="last-name" id="B-first-name" class="form-field">
+                    </label>
+                    <label for="B-last-name">
+                        Last Name: <input type="text" name="last-name" id="B-last-name" class="form-field">
+                    </label>
+                </li>
+                <br>
+                <li>
+                    <p class="form-subheading"> card info: </p>
+                    <label for="card-number">
+                        Card Number: <input type="text" name="card-number" id="card-number" class="form-field">
+                    </label>
+                    <label for="CVV">
+                        CVV: <input type="text" name="CVV" id="CVV" class="form-field">
+                    </label>
+                    <label for="experation-date-month">
+                        Month: <input type="month" name="month" id="experation-date-month" class="form-field">
+                    </label>
+                    <label for="experation-date-year">
+                        year: <input type="text" name="date" id="experation-date-year" class="form-field"> 
+                    </label>
+                </li>
+                <li>                
+                    <p class="form-subheading">Billing Address:</p>
+                    <label for="B-apt#">
+                        apt#: <input type="text" name = "apt-num" id="B-apt#" class="form-field">
+                    </label>
+                    <label for="B-street-address">
+                        Street Address: <input type="text" name="B-street-address" id="B-street-address" class="form-field">
+                    </label>
+                    <label for = 'B-city'>
+                        City: <input type="text" name = 'city' id="B-city" class="form-field">
+                    </label>
+                    <label for="B-zipcode">
+                        ZIP Code: <input type="text" name="zipcode" id="B-zipcode" class="form-field">
+                    </label>
+                    <label for = "B-State">
+                    State: <select name="State" id="B-State">
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AR">AR</option>	
+                            <option value="AZ">AZ</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DC">DC</option>
+                            <option value="DE">DE</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="IA">IA</option>	
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="MA">MA</option>
+                            <option value="MD">MD</option>
+                            <option value="ME">ME</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MO">MO</option>	
+                            <option value="MS">MS</option>
+                            <option value="MT">MT</option>
+                            <option value="NC">NC</option>	
+                            <option value="NE">NE</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>			
+                            <option value="NV">NV</option>
+                            <option value="NY">NY</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WI">WI</option>	
+                            <option value="WV">WV</option>
+                            <option value="WY">WY</option>
+                        </select>
+                    </label>
+             </li>
+            </ul>
+        </fieldset>
+        <button type="submit" class='submit-btn'>submit</button>
+    </form>
+    <footer>
+        <h2 class = "section-head">Our Mission</h2>
+        <p>fake buisness is the proprietery perveyor of fake products</p>
+        <p>questions and complaints can be addressed <em>nowhere</em></p>
+        <p>all buisness is fake buisness until finalized</p>
+        <p><em>Aut inveniam viam aut faciam</em></p>
+    </footer>
+
+</body>
+
+</html>

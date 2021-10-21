@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <script src="imageFile.js" async></script>
+    <title>product page</title>
+</head>
+<body>
+    <Header>
+        <a href="index.html" class= 'title-link'>
+            <h1 id="site-title"> Fakebiz</h1>
+        </a>
+        <form action="#" id ='search-form'>
+            <label for="search-bar">Search</label>
+            <input type="text" id="search-bar" name="search_query" value="search">
+        </form>
+        <div class="search-button-container">
+            <button type="submit" class="search-button">
+                <i class='bx bx-search-alt'></i>
+            </button>
+        </div>
+        <div class ='cart-container'>
+            <button type="button" class="cart-button"><i class='bx bx-cart'></i></button> 
+         </div>
+    </Header>  
+    <nav class='header-nav'>
+            <ul class='nav-list'>
+                <li class = "test" onmouseover="bolder(0)" onmouseout="unbolder(0)"><a href="index.html">Home</a></li>
+                <li class = "test" onmouseover="bolder(1)" onmouseout="unbolder(1)"><a href="#">Featured</a></li>
+                <li class = "test" onmouseover="bolder(2)" onmouseout="unbolder(2)"><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    <hr>
+    <h2> Kirby </h2>
+    <div class="product-page-container">
+        <figure id = "magnifying_area">
+            <img src="./images/kirby500px.png" alt="" class='big-image' id = "magnifying_img">
+        </figure>
+        <div class = 'pp-details-container'>
+            <h3 class="pp-detail-list-header">product details</h3>
+            <ul class="pp-details-list">
+                <li>lifesize version of kirby</li>
+                <li>30ft tall--kid you not</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
