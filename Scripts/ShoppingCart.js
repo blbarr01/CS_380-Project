@@ -1,3 +1,8 @@
+/* 
+all code related to the function of the button class shall go here
+*/
+
+
 if(document.readyState== 'loading'){
     document.addEventListener('DOMContentLoaded', ready)
 }else{
